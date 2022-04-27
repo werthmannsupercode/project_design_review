@@ -1,0 +1,292 @@
+@font-face {
+    font-family: Graphik Medium;
+    src: url('../fonts/Graphik-Medium.ttf');
+}
+
+@font-face {
+    font-family: Graphik Regular;
+    src: url('../fonts/Graphik-Regular.woff');
+}
+
+@font-face {
+    font-family: Theinhardt;
+    src: url('../fonts/Theinhardt-Lt.woff');
+}
+
+@font-face {
+    font-family: TiemposHeadline;
+    src: url('../fonts/TiemposHeadline-Semibold.woff');
+}
+
+/* Farben: color: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff*/
+
+/* =====================================
+        GENERAL STYLES
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* =====================================
+        HEADER STYLES
+===================================== */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3vh 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #2B2C2E;
+    font-size: 1.6rem;
+    font-family: Graphik Regular;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header h1 {
+    font-family: TiemposHeadline;
+    color: #2B2C2E;
+    font-size: 2.8rem;
+    margin-right: 3.5vw;
+}
+
+header button {
+    width: 15vw;
+    background-color: #fff;
+    border: 2px solid #2B2C2E;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 2rem;
+    font-family: Graphik Medium;
+}
+
+header button:hover {
+    background-color: #2B2C2E;
+    color: white;
+    cursor: pointer;
+}
+
+/* =====================================
+        MAIN STYLES
+===================================== */
+
+.hero {
+    background-image: url('../img/home_hero.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.hero h2 {
+    font-family: Graphik Regular;
+    color: #2B2C2E;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10vh 0 87.5vh 0;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price>p {
+    font-family: Graphik Medium;
+    color: #2B2C2E;
+    font-size: 2rem;
+    line-height: 1.5;
+    width: 52.5vw;
+    margin: 25vh 5vw 20vh 0;
+}
+
+.price article {
+    font-family: Theinhardt;
+    width: 15vw;
+    margin-right: 10vw;
+}
+
+.price article>p {
+    font-size: 6rem;
+    font-weight: 600;
+    color: #2B2C2E;
+}
+
+.price article p:last-of-type {
+    color: #848689;
+    font-size: 2rem;
+}
+
+.deliverables {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.deliverables img {
+    width: 40vw;
+}
+
+.deliverables article {
+    width: 40vw;
+    margin-left: 2vw;
+}
+
+.deliverables article h3 {
+    font-family: TiemposHeadline;
+    color: #27282A;
+    font-size: 6rem;
+}
+
+.deliverables article h4 {
+    font-family: Graphik Medium;
+    color: #2B2C2E;
+    padding: 5vh 0 3vh 0;
+    font-size: 2.4rem;
+}
+
+.deliverables article p {
+    font-family: Theinhardt;
+    color: #848689;
+    font-size: 2rem;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+
+.works div {
+    background-color: rgb(241, 241, 244);
+    width: 85vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.works div article {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.works div article h3 {
+    font-family: TiemposHeadline;
+    color: #27282A;
+    font-size: 6rem;
+    padding-bottom: 3vh;
+}
+
+.works div article ol {
+    padding-left: 3vw;
+}
+
+.works div article li,
+.works div article p {
+    font-family: Theinhardt;
+    color: #848689;
+    font-size: 1.8rem;
+}
+
+.works div img {
+    width: 50%;
+}
+
+.critique {
+    text-align: center;
+    margin-bottom: 20vh;
+}
+
+.critique h3 {
+    font-family: TiemposHeadline;
+    color: #27282A;
+    font-size: 6rem;
+    padding-bottom: 4vh;
+}
+
+.critique p {
+    font-family: Theinhardt;
+    color: #848689;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+.achtundzwanzig {
+    display: flex;
+    justify-content: center;
+}
+
+.achtundzwanzig div {
+    background-image: url('../img/home_conversion.png'), url('../img/28.png');
+    background-repeat: no-repeat;
+    background-position: 100% 70%, top;
+    background-size: 50%, 120%;
+    width: 85%;
+    border-bottom: 1px solid #9FA2A7;
+    padding: 40vh 40vw 20vh 14vw;
+    margin-bottom: 20vh;
+}
+
+.achtundzwanzig p {
+    font-family: Graphik Medium;
+    color: #848689;
+    font-size: 2rem;
+    line-height: 2;
+
+}
+
+/* =====================================
+        FOOTER STYLES
+===================================== */
+
+footer h3 {
+    font-family: TiemposHeadline;
+    color: #27282A;
+    font-size: 5rem;
+    padding-bottom: 4vh;
+    text-align: center;
+}
+
+footer p {
+    font-family: Theinhardt;
+    color: #848689;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+footer p a {
+    color: #2B2C2E;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer p img {
+    height: 20vh;
+
+}
